@@ -1,0 +1,27 @@
+package avaliacaoformativa;
+
+import java.util.Scanner;
+
+public class atividade2 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int j =0, soma =0;
+		int x[] = new int[10];
+		
+		for(int i=0; i<10; i++) {
+			System.out.print("Informe o " + i + "° valor..: ");
+			x[i] = ler.nextInt();
+		}
+		
+		for(int i=0; i<10; i++) {
+			if(i%2 ==0) {
+				System.out.println(" os valores são " + x[i]);
+				soma = soma +x[i];
+				j++;
+			}
+		}
+		System.out.println("A quantidade de PAR é " + j);
+		System.out.println("A soma dos valores é ..: " + soma);
+		ler.close();
+		
